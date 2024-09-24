@@ -7,15 +7,27 @@ nav{
   gap:2rem;
   padding:2rem;
 }
+ul{
+  display:flex;
+  gap:2rem;
+}
+li{
+  list-style: none;
+}
 
 h1{
   display:flex;
   justify-content: center;
   align-items: center;
 }
+p{
+  text-align: center;
+}
 .App-logo {
+  display:flex;
   height: 40vmin;
   pointer-events: none;
+  margin:auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
