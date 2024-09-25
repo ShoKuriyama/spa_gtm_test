@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
@@ -24,6 +24,16 @@ const About = () => {
         <title>About</title>
       </Helmet>
       <h1>About Page</h1>
+
+      {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
+      <button id="ot-sdk-btn" class="ot-sdk-show-settings">
+        Cookie 設定
+      </button>
+      {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
+
+      {/* <!-- OneTrust Cookie リストの始点 --> */}
+      <div id="ot-sdk-cookie-policy"></div>
+      {/* <!-- OneTrust Cookie リストの終点 --> */}
     </div>
   );
 };
