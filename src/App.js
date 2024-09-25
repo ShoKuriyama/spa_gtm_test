@@ -13,6 +13,15 @@ const Home = () => {
       </Helmet>
       <h1>Home Page </h1>
       <img src={logo} className="App-logo" alt="logo" />
+      {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
+      <button id="ot-sdk-btn" class="ot-sdk-show-settings">
+        Cookie 設定
+      </button>
+      {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
+
+      {/* <!-- OneTrust Cookie リストの始点 --> */}
+      <div id="ot-sdk-cookie-policy"></div>
+      {/* <!-- OneTrust Cookie リストの終点 --> */}
     </div>
   );
 };
