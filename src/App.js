@@ -16,6 +16,7 @@ const Home = () => {
       {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
       <button id="ot-sdk-btn" class="ot-sdk-show-settings">
         Cookie 設定
+        {console.log("topのcookie設定クリック")}
       </button>
       {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
 
@@ -37,6 +38,7 @@ const About = () => {
       {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
       <button id="ot-sdk-btn" class="ot-sdk-show-settings">
         Cookie 設定
+        {console.log("aboutののcookie設定クリック")}
       </button>
       {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
 
