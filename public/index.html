@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5R6NHLZG");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,22 +39,9 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <!-- Google Tag Manager -->
-    <!-- <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5R6NHLZG");
-    </script> -->
-    <!-- End Google Tag Manager -->
+
     <!-- spa-gtm-test.vercel.app に対する OneTrust Cookie 同意通知の始点 -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://cdn-apac.onetrust.com/consent/0192298a-318e-7ec2-a63a-6624c36665b3/OtAutoBlock.js"
     ></script>
@@ -52,7 +53,7 @@
     ></script>
     <script type="text/javascript">
       function OptanonWrapper() {}
-    </script>
+    </script> -->
     <!-- spa-gtm-test.vercel.app に対する OneTrust Cookie 同意通知の終点 -->
   </head>
   <body>
