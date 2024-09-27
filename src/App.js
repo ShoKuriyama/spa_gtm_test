@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-
-import React from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -11,11 +10,8 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <h1>Home Page </h1>
+      <h1>Home Page</h1>
       <img src={logo} className="App-logo" alt="logo" />
-      {/* <!-- OneTrust Cookie リストの始点 --> */}
-      <div id="ot-sdk-cookie-policy"></div>
-      {/* <!-- OneTrust Cookie リストの終点 --> */}
     </div>
   );
 };
@@ -27,35 +23,22 @@ const About = () => {
         <title>About</title>
       </Helmet>
       <h1>About Page</h1>
-      {/* <!-- OneTrust Cookie リストの始点 --> */}
-      <div id="ot-sdk-cookie-policy"></div>
-      {/* <!-- OneTrust Cookie リストの終点 --> */}
     </div>
   );
 };
 
-const Footer = () =>{
+const Footer = ({ flg }) => {
   return (
     <footer id="footer">
-      {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
-      {/* <button
-        id="ot-sdk-btn"
-        class="ot-sdk-show-settings"
-        onClick={console.log("aboutののcookie設定クリック")}
-      >
-        Cookie 設定
-      </button> */}
-      {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
-
-      {/* <!-- OneTrust Cookie リストの始点 --> */}
-      {/* <div id="ot-sdk-cookie-policy"></div> */}
-      {/* <!-- OneTrust Cookie リストの終点 --> */}
-      <p>aaa</p>
+      {/* flgがtrueの時のみCookie設置ボタンを表示 */}
+      {flg && <button className="optanon-show-settings">Cookie 設置</button>}
     </footer>
   );
-}
+};
 
 function App() {
+  const [flg, setFlg] = useState(false);
+
   return (
     <Router>
       <nav>
@@ -73,7 +56,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer />
+      <Footer flg={flg} />
+      {/* フラグの状態を更新するボタン */}
+      <button onClick={() => setFlg(!flg)}>フラグを切り替える</button>
     </Router>
   );
 }

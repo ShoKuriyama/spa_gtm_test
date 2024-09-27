@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
-    <!-- <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5R6NHLZG");
-    </script> -->
-    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,41 +26,30 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-
-    <!-- spa-gtm-test.vercel.app に対する OneTrust Cookie 同意通知の始点 -->
-    <script
-      type="text/javascript"
-      src="https://cdn-apac.onetrust.com/consent/0192298a-318e-7ec2-a63a-6624c36665b3/OtAutoBlock.js"
-    ></script>
-    <script
-      src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"
-      type="text/javascript"
-      charset="UTF-8"
-      data-domain-script="0192298a-318e-7ec2-a63a-6624c36665b3"
-    ></script>
-    <script type="text/javascript">
-      function OptanonWrapper() {
-        // ボタン要素を生成
-        const button = document.createElement("button");
-
-        // ボタンに属性を追加
-        button.id = "ot-sdk-btn";
-        button.className = "ot-sdk-show-settings";
-
-        // ボタンのクリックイベントを追加
-        button.onclick = function () {
-          console.log("aboutのcookie設定クリック");
-        };
-
-        // ボタンのテキストを設定
-        button.textContent = "Cookie 設定";
-
-        // footer要素を取得して、ボタンをその直下に追加
-        const footer = document.getElementById("footer");
-        footer.appendChild(button);
-      }
+        <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5R6NHLZG");
     </script>
-    <!-- spa-gtm-test.vercel.app に対する OneTrust Cookie 同意通知の終点 -->
+    <!-- End Google Tag Manager -->
+
+
+    <!-- iink.jp に対する OneTrust Cookie 同意通知の始点 -->
+<!-- <script src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="de18b256-656f-4c31-891e-2b3551076ed8" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script> -->
+<!-- iink.jp に対する OneTrust Cookie 同意通知の終点 -->
+
+
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -86,7 +62,7 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
     <div id="root"></div>
     <!--
       This HTML file is a template.
