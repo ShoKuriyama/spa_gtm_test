@@ -52,7 +52,26 @@
       data-domain-script="0192298a-318e-7ec2-a63a-6624c36665b3"
     ></script>
     <script type="text/javascript">
-      function OptanonWrapper() {}
+      function OptanonWrapper() {
+        // ボタン要素を生成
+        const button = document.createElement("button");
+
+        // ボタンに属性を追加
+        button.id = "ot-sdk-btn";
+        button.className = "ot-sdk-show-settings";
+
+        // ボタンのクリックイベントを追加
+        button.onclick = function () {
+          console.log("aboutのcookie設定クリック");
+        };
+
+        // ボタンのテキストを設定
+        button.textContent = "Cookie 設定";
+
+        // footer要素を取得して、ボタンをその直下に追加
+        const footer = document.getElementById("footer");
+        footer.appendChild(button);
+      }
     </script>
     <!-- spa-gtm-test.vercel.app に対する OneTrust Cookie 同意通知の終点 -->
   </head>

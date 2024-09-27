@@ -13,7 +13,9 @@ const Home = () => {
       </Helmet>
       <h1>Home Page </h1>
       <img src={logo} className="App-logo" alt="logo" />
-
+      {/* <!-- OneTrust Cookie リストの始点 --> */}
+      <div id="ot-sdk-cookie-policy"></div>
+      {/* <!-- OneTrust Cookie リストの終点 --> */}
     </div>
   );
 };
@@ -25,28 +27,30 @@ const About = () => {
         <title>About</title>
       </Helmet>
       <h1>About Page</h1>
-
-
+      {/* <!-- OneTrust Cookie リストの始点 --> */}
+      <div id="ot-sdk-cookie-policy"></div>
+      {/* <!-- OneTrust Cookie リストの終点 --> */}
     </div>
   );
 };
 
 const Footer = () =>{
   return (
-    <footer>
+    <footer id="footer">
       {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
-      <button
+      {/* <button
         id="ot-sdk-btn"
         class="ot-sdk-show-settings"
         onClick={console.log("aboutののcookie設定クリック")}
       >
         Cookie 設定
-      </button>
+      </button> */}
       {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
 
       {/* <!-- OneTrust Cookie リストの始点 --> */}
-      <div id="ot-sdk-cookie-policy"></div>
+      {/* <div id="ot-sdk-cookie-policy"></div> */}
       {/* <!-- OneTrust Cookie リストの終点 --> */}
+      <p>aaa</p>
     </footer>
   );
 }
