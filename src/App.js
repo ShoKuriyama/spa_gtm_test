@@ -14,9 +14,12 @@ const Home = () => {
       <h1>Home Page </h1>
       <img src={logo} className="App-logo" alt="logo" />
       {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
-      <button id="ot-sdk-btn" class="ot-sdk-show-settings">
+      <button
+        id="ot-sdk-btn"
+        class="ot-sdk-show-settings"
+        onClick={console.log("topのcookie設定クリック")}
+      >
         Cookie 設定
-        {console.log("topのcookie設定クリック")}
       </button>
       {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
 
@@ -36,9 +39,12 @@ const About = () => {
       <h1>About Page</h1>
 
       {/* <!-- OneTrust Cookie 設定ボタンの始点 --> */}
-      <button id="ot-sdk-btn" class="ot-sdk-show-settings">
+      <button
+        id="ot-sdk-btn"
+        class="ot-sdk-show-settings"
+        onClick={console.log("aboutののcookie設定クリック")}
+      >
         Cookie 設定
-        {console.log("aboutののcookie設定クリック")}
       </button>
       {/* <!-- OneTrust Cookie 設定ボタンの終点 --> */}
 
